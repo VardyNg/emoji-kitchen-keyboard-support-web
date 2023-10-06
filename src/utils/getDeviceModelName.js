@@ -1,8 +1,10 @@
 import * as constants from '@/constants';
 
 export function getDeviceModelsByPrefix(prefix) {
-  return Object.values(constants).filter((constant) => constant.startsWith(prefix));
+  let keys = Object.keys(constants).filter((constantKey) => constantKey.startsWith(prefix));
+  return keys.map((key) => constants[key]);
 }
+
 
 export function getiPadModels() {
   return getDeviceModelsByPrefix('iPad');
