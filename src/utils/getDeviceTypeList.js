@@ -1,15 +1,16 @@
-// deviceTypes.js
+import * as DeviceTypes from '@/constants';
 
-import { 
-  deviceType_iPhone,
-  deviceType_iPad,
-  deviceType_Mac,
-} from '@/constants';
-
+/**
+ * Returns a list of device types.
+ * @returns {Array} An array of device types.
+ */
 export default function getDeviceTypeList() {
-  return [
-    deviceType_iPhone,
-    deviceType_iPad,
-    deviceType_Mac,
-  ];
+  const {
+    iPhone: deviceType_iPhone,
+    iPod_touch: deviceType_iPod_touch,
+    iPad: deviceType_iPad,
+    Mac: deviceType_Mac,
+  } = DeviceTypes;
+
+  return [deviceType_iPhone, deviceType_iPod_touch, deviceType_iPad, deviceType_Mac];
 }
