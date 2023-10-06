@@ -6,13 +6,10 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 import SupportPage from './components/Support.vue'  
 export default {
   name: 'App',
   components: {
-    HelloWorld
     SupportPage,
   }
 }
