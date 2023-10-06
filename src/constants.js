@@ -1,5 +1,6 @@
 // device type
 export const deviceType_iPhone = 'iPhone';
+export const deviceType_iPod_touch = 'iPod touch';
 export const deviceType_iPad = 'iPad';
 export const deviceType_Mac = 'Mac';
 // device model
