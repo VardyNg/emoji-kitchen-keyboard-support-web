@@ -12,6 +12,12 @@
 
 <script>
 import getDeviceTypeList from '@/utils/getDeviceTypeList'
+import {
+  getiPadModels,
+  getiPodModels,
+  getiPhoneModels,
+  getMacModels, 
+} from '@/utils/getDeviceModelName'
 export default {
   name: 'SupportPage',
   data() {
