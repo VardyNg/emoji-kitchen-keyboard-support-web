@@ -24,7 +24,7 @@ import {
   getiPodModels,
   getiPhoneModels,
   getMacModels, 
-} from '@/utils/getDeviceModelName'
+} from '@/utils/getDeviceModelName';
 import * as constants from '@/constants';
 export default {
   name: 'SupportPage',
