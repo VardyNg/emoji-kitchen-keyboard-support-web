@@ -6,10 +6,12 @@
 </template>
 
 <script>
+import HeaderItem from './components/Header.vue'  
 import SupportPage from './components/Support.vue'  
 export default {
   name: 'App',
   components: {
+    HeaderItem,
     SupportPage,
   }
 }
