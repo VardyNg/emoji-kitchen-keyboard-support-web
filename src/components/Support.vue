@@ -12,7 +12,7 @@
       label="Model"
       :items="filteredModels"
       variant="outlined"
-      disabled="!selectedDeviceType"
+      :disabled="isModelSelectionDisabled"
     ></v-select>
   </div>
 </template>
@@ -49,6 +49,10 @@ export default {
         default:
           return [];
       }
+    },
+    isModelSelectionDisabled() {
+      // Disable the model selection if selectedDeviceType is not set
+      return !this.selectedDeviceType;
     },
   }
 }
