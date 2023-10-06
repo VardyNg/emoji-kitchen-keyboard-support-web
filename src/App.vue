@@ -2,7 +2,6 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HeaderItem />
   <SupportPage />
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
