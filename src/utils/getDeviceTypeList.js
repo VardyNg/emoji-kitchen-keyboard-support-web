@@ -1,4 +1,4 @@
-import * as DeviceTypes from '@/constants';
+import * as constants from '@/constants';
 
 /**
  * Returns a list of device types.
@@ -6,9 +6,9 @@ import * as DeviceTypes from '@/constants';
  */
 export default function getDeviceTypeList() {
   return [
-    DeviceTypes.deviceType_iPhone, 
-    DeviceTypes.deviceType_iPod_touch,
-    DeviceTypes.deviceType_iPad,
-    DeviceTypes.deviceType_Mac,
+    constants.deviceType.iPhone, 
+    constants.deviceType.iPod_touch,
+    constants.deviceType.iPad,
+    constants.deviceType.mac,
   ];
 }
