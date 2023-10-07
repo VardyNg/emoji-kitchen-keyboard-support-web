@@ -23,6 +23,15 @@
       v-model="selectedOS"
       :disabled="isModelSelectionDisabled"
     ></v-select>
+    
+    <div class="form-section-title">Issue</div>
+    <div v-for="(issueType, index) in issueTypes" :key="index">
+      <v-checkbox
+        :label="issueType"
+        v-model="selectedIssues"
+        :value="issueType"
+      />
+    </div>
     <v-btn 
       block
       @click="submit"
@@ -54,8 +63,10 @@ export default {
     return {
       deviceTypes: getDeviceTypeList(),
       selectedDeviceType: null,
-      selectedDeviceModel: null, // Add this property
-      selectedOS: null, // Add this property
+      selectedDeviceModel: null, 
+      selectedOS: null,
+      selectedIssues: [],
+      issueTypes: constants.issueTypes
     }
   },
   computed: {
