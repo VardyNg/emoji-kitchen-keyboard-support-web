@@ -1,18 +1,18 @@
 import * as constants from '@/constants';
-import getConstantByPrefix from '@/utils/getConstantByPrefix';
+import jsonToArray from '@/utils/jsonToArray';
 
 export function getiPadModels() {
-  return getConstantByPrefix('iPad', constants);
+  return jsonToArray(constants.iPad)
 }
 
 export function getiPodModels() {
-  return getConstantByPrefix('iPod', constants);
+  return jsonToArray(constants.iPodTouch)
 }
 
 export function getiPhoneModels() {
-  return getConstantByPrefix('iPhone', constants);
+  return jsonToArray(constants.iPhone)
 }
 
 export function getMacModels() {
-  return getConstantByPrefix('Mac', constants);
+  return jsonToArray(constants.mac)
 }
