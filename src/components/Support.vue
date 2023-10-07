@@ -32,10 +32,16 @@
         :value="issueType"
       />
     </div>
-    <v-textarea label="Can you describe the issue?"></v-textarea>
+    <v-textarea 
+      label="Can you describe the issue?"
+      v-moel="describedIssues"
+    />
 
     <div class="form-section-title">Contacts</div>
-    <v-text-field label="Email"></v-text-field>
+    <v-text-field 
+      label="Email"
+      v-model="inputEmail"
+    />
     <v-btn 
       block
       @click="submit"
@@ -70,7 +76,9 @@ export default {
       selectedDeviceModel: null, 
       selectedOS: null,
       selectedIssues: [],
-      issueTypes: constants.issueTypes
+      describedIssues: "",
+      inputEmail: "",
+      issueTypes: constants.issueTypes,
     }
   },
   computed: {
