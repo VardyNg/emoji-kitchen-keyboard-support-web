@@ -22,6 +22,16 @@
       v-model="selectedOS"
       :disabled="isModelSelectionDisabled"
     ></v-select>
+    <v-btn 
+      block
+    >
+      Submit
+    </v-btn>
+    <v-btn 
+      block
+    >
+      Clear
+    </v-btn>
   </div>
 </template>
 
