@@ -8,21 +8,21 @@
       :items="deviceTypes"
       v-model="selectedDeviceType"
       variant="outlined"
-    ></v-select>
+    />
     <v-select
       label="Model"
       :items="filteredModels"
       variant="outlined"
       v-model="selectedDeviceModel"
       :disabled="isModelSelectionDisabled"
-    ></v-select>
+    />
     <v-select
       label="OS"
       :items="filteredOS"
       variant="outlined"
       v-model="selectedOS"
       :disabled="isModelSelectionDisabled"
-    ></v-select>
+    />
     
     <div class="form-section-title">Issue</div>
     <div v-for="(issueType, index) in issueTypes" :key="index">
