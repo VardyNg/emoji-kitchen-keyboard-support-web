@@ -115,6 +115,15 @@ export default {
   methods: {
     submit: function () {
       console.log("submit")
+      const body = {
+        "selectedDeviceType": this.selectedDeviceType,
+        "selectedDeviceModel": this.selectedDeviceModel,
+        "selectedOS": this.selectedOS,
+        "selectedIssues": this.selectedIssues,
+        "describedIssues": this.describedIssues,
+        "inputEmail": this.inputEmail,
+      }
+      console.log(body);
     },
     clear: function () {
       console.log("clear")
