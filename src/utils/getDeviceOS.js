@@ -1,14 +1,14 @@
 import * as constants from '@/constants';
-import getDeviceModelsByPrefix from '@/utils/getConstantByPrefix';
+import jsonToArray from '@/utils/jsonToArray';
 
 export default function getDeviceOS(deviceType) {
   switch (deviceType) {
-      case constants.deviceType_Mac:
-        return getDeviceModelsByPrefix('macOS', constants);
-      case constants.deviceType_iPad:
-      case constants.deviceType_iPhone:
-      case constants.deviceType_iPod_touch:
-        return getDeviceModelsByPrefix('iOS', constants);
+      case constants.deviceType.mac:
+        return jsonToArray(constants.macOS)
+      case constants.deviceType.iPad:
+      case constants.deviceType.iPhone:
+      case constants.deviceType.iPod_touch:
+        return jsonToArray(constants.iOS)
       default:
         return [];
   } 
