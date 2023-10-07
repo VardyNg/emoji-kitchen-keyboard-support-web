@@ -2,16 +2,19 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HeaderItem />
   <SupportPage />
+  <CopyRight />
 </template>
 
 <script>
 import HeaderItem from './components/Header.vue'  
 import SupportPage from './components/Support.vue'  
+import CopyRight from './components/CopyRight.vue';
 export default {
   name: 'App',
   components: {
     HeaderItem,
     SupportPage,
+    CopyRight,
   }
 }
 </script>
