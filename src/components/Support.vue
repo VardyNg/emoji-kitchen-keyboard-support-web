@@ -34,6 +34,8 @@
     </div>
     <v-textarea label="Can you describe the issue?"></v-textarea>
 
+    <div class="form-section-title">Contacts</div>
+    <v-text-field label="Email"></v-text-field>
     <v-btn 
       block
       @click="submit"
