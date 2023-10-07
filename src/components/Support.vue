@@ -44,6 +44,7 @@
     />
 
     <div class="form-section-title">Contacts</div>
+    <p>You may leave your email address for following up the issue.</p>
     <v-text-field 
       label="Email"
       v-model="inputEmail"
