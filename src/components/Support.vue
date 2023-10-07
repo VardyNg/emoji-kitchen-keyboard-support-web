@@ -14,11 +14,18 @@
       variant="outlined"
       :disabled="isModelSelectionDisabled"
     ></v-select>
+    <v-select
+      label="OS"
+      :items="filteredOS"
+      variant="outlined"
+      :disabled="isModelSelectionDisabled"
+    ></v-select>
   </div>
 </template>
 
 <script>
 import getDeviceTypeList from '@/utils/getDeviceTypeList'
+import getDeviceOS from '@/utils/getDeviceOS'
 import {
   getiPadModels,
   getiPodModels,
@@ -54,6 +61,10 @@ export default {
       // Disable the model selection if selectedDeviceType is not set
       return !this.selectedDeviceType;
     },
+    filteredOS() {
+      return getDeviceOS(this.selectedDeviceType)
+    }
+    
   }
 }
 </script>
