@@ -168,4 +168,5 @@ export const issueTypes = [
   "Keyboard freezes / crash / not responding / do not show up",
   "Mixed emojis not showing correctly",
   "Failed to copy / share / save mixed emojis",
+  "Other issues",
 ];
