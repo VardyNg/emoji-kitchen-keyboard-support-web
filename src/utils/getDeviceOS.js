@@ -1,4 +1,5 @@
 import * as constants from '@/constants';
+import getDeviceModelsByPrefix from '@/utils/getConstantByPrefix';
 
 function formatOSRange(min, max) {
   return {min, max}
