@@ -38,8 +38,9 @@
       />
     </div>
     <v-textarea 
-      label="Can you describe the issue?"
-      v-moel="describedIssues"
+      :label="'Can you describe the issue? (' + describedIssues.length + '/'+ describeIssueTextLimit +')'"
+      v-model="describedIssues"
+      :error-messages="describeIssueErrorMsg"
     />
 
     <div class="form-section-title">Contacts</div>
@@ -79,6 +80,7 @@ export default {
       // data
       deviceTypes: getDeviceTypeList(),
       issueTypes: constants.issueTypes,
+      describeIssueTextLimit: constants.form.describeIssueTextLimit,
       // inputs
       selectedDeviceType: null,
       selectedDeviceModel: null, 
@@ -86,10 +88,11 @@ export default {
       selectedIssues: [],
       describedIssues: "",
       inputEmail: "",
-      // error boolean
+      // error messages
       deviceTypeErrorMsg: "",
       deviceModelErrorMsg: "",
       deviceOSErrorMsg: "",
+      describeIssueErrorMsg: "",
     }
   },
   computed: {
@@ -135,15 +138,32 @@ export default {
     }
   },
   methods: {
+    validateDescribedIssue: function () {
+      if (this.describedIssues.length > this.describeIssueTextLimit) {
+        this.describeIssueErrorMsg = "Word limit exceeded";
+        return false
+      }
+      return true
+    },
     submit: function () {
       console.log("submit")
       // validate input
-      if (!this.selectedDeviceType) 
+      var valid = true;
+      if (!this.selectedDeviceType) {
         this.deviceTypeErrorMsg = "Please select a device type";
-      if (!this.selectedDeviceModel) 
+        valid = false
+      } 
+      if (!this.selectedDeviceModel) {
         this.deviceModelErrorMsg = "Please select a device model";
-      if (!this.selectedOS)
+        valid = false
+      }
+      if (!this.selectedOS) {
         this.deviceOSErrorMsg = "Please select an OS";
+        valid = false
+      }
+      if (!this.validateDescribedIssue()) {
+        valid = false
+      } 
 
       const body = {
         "selectedDeviceType": this.selectedDeviceType,

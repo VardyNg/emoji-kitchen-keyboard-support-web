@@ -174,3 +174,7 @@ export const issueTypes = [
   "Failed to copy / share / save mixed emojis",
   "Other issues",
 ];
+
+export const form = {
+  describeIssueTextLimit: 500,
+}
