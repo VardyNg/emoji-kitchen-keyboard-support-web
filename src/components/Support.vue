@@ -49,6 +49,8 @@
       label="Email"
       v-model="inputEmail"
     />
+
+    <p style="color: red;">{{ formErrorMsg }}</p>
     <v-btn 
       block
       @click="submit"
@@ -94,6 +96,7 @@ export default {
       deviceModelErrorMsg: "",
       deviceOSErrorMsg: "",
       describeIssueErrorMsg: "",
+      formErrorMsg: "",
     }
   },
   computed: {
@@ -118,7 +121,7 @@ export default {
     },
     filteredOS() {
       return getDeviceOS(this.selectedDeviceType)
-    }
+    },
   },
   watch: {
     selectedDeviceType() {
@@ -171,6 +174,12 @@ export default {
         valid = false
       } 
 
+      if (valid) {
+        this.formErrorMsg = ""
+      } else {
+        this.formErrorMsg = "Please fill in all required fields or correct the errors"
+      }
+      
       const body = {
         "selectedDeviceType": this.selectedDeviceType,
         "selectedDeviceModel": this.selectedDeviceModel,
