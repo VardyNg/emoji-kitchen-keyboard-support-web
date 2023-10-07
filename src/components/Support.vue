@@ -91,7 +91,7 @@ export default {
           return getiPadModels();
         case constants.deviceType.iPod_touch:
           return getiPodModels();
-        case constants.deviceType.Mac:
+        case constants.deviceType.mac:
           return getMacModels();
         default:
           return [];
