@@ -32,6 +32,8 @@
         :value="issueType"
       />
     </div>
+    <v-textarea label="Can you describe the issue?"></v-textarea>
+
     <v-btn 
       block
       @click="submit"
