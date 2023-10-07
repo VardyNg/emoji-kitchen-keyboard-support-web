@@ -11,7 +11,7 @@
     >
       <HeaderItem class="main-components"/>
       <SupportPage class="main-components"/>
-      <CopyRight class="main-components"/>
+      <FooterItem class="main-components"/>
     </div>
   </div>
 </template>
@@ -19,13 +19,13 @@
 <script>
 import HeaderItem from './components/Header.vue'  
 import SupportPage from './components/Support.vue'  
-import CopyRight from './components/CopyRight.vue';
+import FooterItem from './components/Footer.vue';
 export default {
   name: 'App',
   components: {
     HeaderItem,
     SupportPage,
-    CopyRight,
+    FooterItem,
   }
 }
 </script>

@@ -1,6 +1,10 @@
 export const general = {
+  webGithubURL: 'https://github.com/vardy/emoji-kitchen-keyboard-support-web',
+  backendGithubURL: '',
   appName: 'Emoji Kitchen Keyboard',
-  author: 'Vardy Ng'
+  appURL: 'https://apps.apple.com/us/app/emoji-kitchen-keyboard/id6467653793',
+  author: 'Vardy Ng',
+  authorWebsite: 'https://vardyng.com/',
 }
 // device type
 export const deviceType = {
