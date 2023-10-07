@@ -195,6 +195,9 @@ export default {
       this.selectedDeviceType = null;
       this.selectedDeviceModel = null;
       this.selectedOS = null;
+      this.selectedIssues = [];
+      this.describedIssues = "";
+      this.inputEmail = "";
     }
   }
 }
