@@ -90,73 +90,74 @@ export const mac = {
 }
 
 // iOS
-export const iOS_14_0 = 'iOS/iPadOS 14.0';
-export const iOS_14_0_1 = 'iOS/iPadOS 14.0.1';
-export const iOS_14_1 = 'iOS/iPadOS 14.1';
-export const iOS_14_2 = 'iOS/iPadOS 14.2';
-export const iOS_14_2_1 = 'iOS/iPadOS 14.2.1';
-export const iOS_14_3 = 'iOS/iPadOS 14.3';
-export const iOS_14_4 = 'iOS/iPadOS 14.4';
-export const iOS_14_4_1 = 'iOS/iPadOS 14.4.1';
-export const iOS_14_4_2 = 'iOS/iPadOS 14.4.2';
-export const iOS_14_5 = 'iOS/iPadOS 14.5';
-export const iOS_14_5_1 = 'iOS/iPadOS 14.5.1';
-export const iOS_14_6 = 'iOS/iPadOS 14.6';
-export const iOS_14_7 = 'iOS/iPadOS 14.7';
-export const iOS_14_7_1 = 'iOS/iPadOS 14.7.1';
-export const iOS_14_8 = 'iOS/iPadOS 14.8';
-export const iOS_14_8_1 = 'iOS/iPadOS 14.8.1';
-
-export const iOS_15_0 = 'iOS/iPadOS 15.0';
-export const iOS_15_0_1 = 'iOS/iPadOS 15.0.1';
-export const iOS_15_0_2 = 'iOS/iPadOS 15.0.2';
-export const iOS_15_1 = 'iOS/iPadOS 15.1';
-export const iOS_15_1_1 = 'iOS/iPadOS 15.1.1';
-export const iOS_15_2 = 'iOS/iPadOS 15.2';
-export const iOS_15_2_1 = 'iOS/iPadOS 15.2.1';
-export const iOS_15_3 = 'iOS/iPadOS 15.3';
-export const iOS_15_3_1 = 'iOS/iPadOS 15.3.1';
-export const iOS_15_4 = 'iOS/iPadOS 15.4';
-export const iOS_15_4_1 = 'iOS/iPadOS 15.4.1';
-export const iOS_15_5 = 'iOS/iPadOS 15.5';
-export const iOS_15_6 = 'iOS/iPadOS 15.6';
-export const iOS_15_6_1 = 'iOS/iPadOS 15.6.1';
-export const iOS_15_7 = 'iOS/iPadOS 15.7';
-export const iOS_15_7_1 = 'iOS/iPadOS 15.7.1';
-export const iOS_15_7_2 = 'iOS/iPadOS 15.7.2';
-export const iOS_15_7_3 = 'iOS/iPadOS 15.7.3';
-export const iOS_15_7_4 = 'iOS/iPadOS 15.7.4';
-export const iOS_15_7_5 = 'iOS/iPadOS 15.7.5';
-export const iOS_15_7_6 = 'iOS/iPadOS 15.7.6';
-export const iOS_15_7_7 = 'iOS/iPadOS 15.7.7';
-export const iOS_15_7_8 = 'iOS/iPadOS 15.7.8';
-export const iOS_15_7_9 = 'iOS/iPadOS 15.7.9';
-
-export const iOS_16_0 = 'iOS/iPadOS 16.0';
-export const iOS_16_0_1 = 'iOS/iPadOS 16.0.1';
-export const iOS_16_0_2 = 'iOS/iPadOS 16.0.2';
-export const iOS_16_0_3 = 'iOS/iPadOS 16.0.3';
-export const iOS_16_1 = 'iOS/iPadOS 16.1';
-export const iOS_16_1_1 = 'iOS/iPadOS 16.1.1';
-export const iOS_16_1_2 = 'iOS/iPadOS 16.1.2';
-export const iOS_16_2 = 'iOS/iPadOS 16.2';
-export const iOS_16_3 = 'iOS/iPadOS 16.3';
-export const iOS_16_3_1 = 'iOS/iPadOS 16.3.1';
-export const iOS_16_4 = 'iOS/iPadOS 16.4';
-export const iOS_16_4_1 = 'iOS/iPadOS 16.4.1';
-export const iOS_16_5 = 'iOS/iPadOS 16.5';
-export const iOS_16_5_1 = 'iOS/iPadOS 16.5.1';
-export const iOS_16_6 = 'iOS/iPadOS 16.6';
-export const iOS_16_6_1 = 'iOS/iPadOS 16.6.1';
-export const iOS_16_7 = 'iOS/iPadOS 16.7';
-
-export const iOS_17_0 = 'iOS/iPadOS 17.0';
-export const iOS_17_0_1 = 'iOS/iPadOS 17.0.1';
-export const iOS_17_0_2 = 'iOS/iPadOS 17.0.2';
-export const iOS_17_0_3 = 'iOS/iPadOS 17.0.3';
+export const iOS = {
+  iOS_14_0: 'iOS/iPadOS 14.0',
+  iOS_14_0_1: 'iOS/iPadOS 14.0.1',
+  iOS_14_1: 'iOS/iPadOS 14.1',
+  iOS_14_2: 'iOS/iPadOS 14.2',
+  iOS_14_2_1: 'iOS/iPadOS 14.2.1',
+  iOS_14_3: 'iOS/iPadOS 14.3',
+  iOS_14_4: 'iOS/iPadOS 14.4',
+  iOS_14_4_1: 'iOS/iPadOS 14.4.1',
+  iOS_14_4_2: 'iOS/iPadOS 14.4.2',
+  iOS_14_5: 'iOS/iPadOS 14.5',
+  iOS_14_5_1: 'iOS/iPadOS 14.5.1',
+  iOS_14_6: 'iOS/iPadOS 14.6',
+  iOS_14_7: 'iOS/iPadOS 14.7',
+  iOS_14_7_1: 'iOS/iPadOS 14.7.1',
+  iOS_14_8: 'iOS/iPadOS 14.8',
+  iOS_14_8_1: 'iOS/iPadOS 14.8.1',
+  iOS_15_0: 'iOS/iPadOS 15.0',
+  iOS_15_0_1: 'iOS/iPadOS 15.0.1',
+  iOS_15_0_2: 'iOS/iPadOS 15.0.2',
+  iOS_15_1: 'iOS/iPadOS 15.1',
+  iOS_15_1_1: 'iOS/iPadOS 15.1.1',
+  iOS_15_2: 'iOS/iPadOS 15.2',
+  iOS_15_2_1: 'iOS/iPadOS 15.2.1',
+  iOS_15_3: 'iOS/iPadOS 15.3',
+  iOS_15_3_1: 'iOS/iPadOS 15.3.1',
+  iOS_15_4: 'iOS/iPadOS 15.4',
+  iOS_15_4_1: 'iOS/iPadOS 15.4.1',
+  iOS_15_5: 'iOS/iPadOS 15.5',
+  iOS_15_6: 'iOS/iPadOS 15.6',
+  iOS_15_6_1: 'iOS/iPadOS 15.6.1',
+  iOS_15_7: 'iOS/iPadOS 15.7',
+  iOS_15_7_1: 'iOS/iPadOS 15.7.1',
+  iOS_15_7_2: 'iOS/iPadOS 15.7.2',
+  iOS_15_7_3: 'iOS/iPadOS 15.7.3',
+  iOS_15_7_4: 'iOS/iPadOS 15.7.4',
+  iOS_15_7_5: 'iOS/iPadOS 15.7.5',
+  iOS_15_7_6: 'iOS/iPadOS 15.7.6',
+  iOS_15_7_7: 'iOS/iPadOS 15.7.7',
+  iOS_15_7_8: 'iOS/iPadOS 15.7.8',
+  iOS_15_7_9: 'iOS/iPadOS 15.7.9',
+  iOS_16_0: 'iOS/iPadOS 16.0',
+  iOS_16_0_1: 'iOS/iPadOS 16.0.1',
+  iOS_16_0_2: 'iOS/iPadOS 16.0.2',
+  iOS_16_0_3: 'iOS/iPadOS 16.0.3',
+  iOS_16_1: 'iOS/iPadOS 16.1',
+  iOS_16_1_1: 'iOS/iPadOS 16.1.1',
+  iOS_16_1_2: 'iOS/iPadOS 16.1.2',
+  iOS_16_2: 'iOS/iPadOS 16.2',
+  iOS_16_3: 'iOS/iPadOS 16.3',
+  iOS_16_3_1: 'iOS/iPadOS 16.3.1',
+  iOS_16_4: 'iOS/iPadOS 16.4',
+  iOS_16_4_1: 'iOS/iPadOS 16.4.1',
+  iOS_16_5: 'iOS/iPadOS 16.5',
+  iOS_16_5_1: 'iOS/iPadOS 16.5.1',
+  iOS_16_6: 'iOS/iPadOS 16.6',
+  iOS_16_6_1: 'iOS/iPadOS 16.6.1',
+  iOS_16_7: 'iOS/iPadOS 16.7',
+  iOS_17_0: 'iOS/iPadOS 17.0',
+  iOS_17_0_1: 'iOS/iPadOS 17.0.1',
+  iOS_17_0_2: 'iOS/iPadOS 17.0.2',
+  iOS_17_0_3: 'iOS/iPadOS 17.0.3',
+}
 
 // macOS
-export const macOS_11 = 'macOS 11 Big Sur';
-export const macOS_12 = 'macOS 12 Monterey';
-export const macOS_13 = 'macOS 13 Ventura';
-export const macOS_14 = 'macOS 14 Sonoma';
+export const macOS = {
+  macOS_11: 'macOS 11 Big Sur',
+  macOS_12: 'macOS 12 Monterey',
+  macOS_13: 'macOS 13 Ventura',
+  macOS_14: 'macOS 14 Sonoma',
+}
