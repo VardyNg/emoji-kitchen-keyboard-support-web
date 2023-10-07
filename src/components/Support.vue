@@ -45,13 +45,13 @@ export default {
     filteredModels() {
       // Determine which model list to use based on the selected device type
       switch (this.selectedDeviceType) {
-        case constants.deviceType_iPhone:
+        case constants.deviceType.iPhone:
           return getiPhoneModels();
-        case constants.deviceType_iPad:
+        case constants.deviceType.iPad:
           return getiPadModels();
-        case constants.deviceType_iPod_touch:
+        case constants.deviceType.iPod_touch:
           return getiPodModels();
-        case constants.deviceType_Mac:
+        case constants.deviceType.Mac:
           return getMacModels();
         default:
           return [];
