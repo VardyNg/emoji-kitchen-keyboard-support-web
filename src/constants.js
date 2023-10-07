@@ -161,3 +161,11 @@ export const macOS = {
   macOS_13: 'macOS 13 Ventura',
   macOS_14: 'macOS 14 Sonoma',
 }
+
+// Issues
+export const issueTypes = [
+  "App freezes / crash / not responding / can't open",
+  "Keyboard freezes / crash / not responding / do not show up",
+  "Mixed emojis not showing correctly",
+  "Failed to copy / share / save mixed emojis",
+];
