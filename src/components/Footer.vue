@@ -1,12 +1,12 @@
 <template>
   <div style="background-color: lightgray;">
-    <p>
+    <p class="footer-font">
       Developed by <a :href=authorWebsite target="_blank">{{ author }}</a> for <a :href=appURL target="_blank">{{ appNames  }}</a>
     </p>
-    <p>
+    <p class="footer-font">
       Developed using Vue.js and Vuetify. Hosted on Azure Static Web Apps. Data stored and handled via Azure Functions, CosmosDB, ... etc.
     </p>
-    <p>
+    <p class="footer-font">
       Open-sourced on Web: <a :href="webGithubURL" target="_blank">GitHub</a>, Backend: <a :href="backendGithubURL" target="_blank">GitHub</a>
     </p>
     <br/>
