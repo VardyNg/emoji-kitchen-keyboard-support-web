@@ -1,23 +1,18 @@
 import * as constants from '@/constants';
-
-export function getDeviceModelsByPrefix(prefix) {
-  let keys = Object.keys(constants).filter((constantKey) => constantKey.startsWith(prefix));
-  return keys.map((key) => constants[key]);
-}
-
+import getConstantByPrefix from '@/utils/getConstantByPrefix';
 
 export function getiPadModels() {
-  return getDeviceModelsByPrefix('iPad');
+  return getConstantByPrefix('iPad', constants);
 }
 
 export function getiPodModels() {
-  return getDeviceModelsByPrefix('iPod');
+  return getConstantByPrefix('iPod', constants);
 }
 
 export function getiPhoneModels() {
-  return getDeviceModelsByPrefix('iPhone');
+  return getConstantByPrefix('iPhone', constants);
 }
 
 export function getMacModels() {
-  return getDeviceModelsByPrefix('Mac');
+  return getConstantByPrefix('Mac', constants);
 }
