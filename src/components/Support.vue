@@ -30,6 +30,7 @@
     </v-btn>
     <v-btn 
       block
+      @click="clear"
     >
       Clear
     </v-btn>
@@ -91,6 +92,12 @@ export default {
     submit: function () {
       console.log("submit")
     },
+    clear: function () {
+      console.log("clear")
+      this.selectedDeviceType = null;
+      this.selectedDeviceModel = null;
+      this.selectedOS = null;
+    }
   }
 }
 </script>
