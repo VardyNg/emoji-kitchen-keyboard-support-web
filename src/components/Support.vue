@@ -12,12 +12,14 @@
       label="Model"
       :items="filteredModels"
       variant="outlined"
+      v-model="selectedDeviceModel"
       :disabled="isModelSelectionDisabled"
     ></v-select>
     <v-select
       label="OS"
       :items="filteredOS"
       variant="outlined"
+      v-model="selectedOS"
       :disabled="isModelSelectionDisabled"
     ></v-select>
   </div>
@@ -39,6 +41,8 @@ export default {
     return {
       deviceTypes: getDeviceTypeList(),
       selectedDeviceType: null,
+      selectedDeviceModel: null, // Add this property
+      selectedOS: null, // Add this property
     }
   },
   computed: {
@@ -64,7 +68,13 @@ export default {
     filteredOS() {
       return getDeviceOS(this.selectedDeviceType)
     }
-    
+  },
+  watch: {
+    selectedDeviceType() {
+      // Reset selectedDeviceModel and selectedOS when device type changes
+      this.selectedDeviceModel = null;
+      this.selectedOS = null;
+    }
   }
 }
 </script>
