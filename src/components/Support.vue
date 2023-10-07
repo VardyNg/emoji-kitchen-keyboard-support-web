@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Support</h1>
+    <div class="form-section-title">Device Information</div>
 
     <v-select
       label="Device type"
