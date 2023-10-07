@@ -54,6 +54,7 @@
     <v-btn 
       block
       @click="submit"
+      style="margin-bottom: 10px;"
     >
       Submit
     </v-btn>
