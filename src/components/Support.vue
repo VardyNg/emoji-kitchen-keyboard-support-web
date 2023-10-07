@@ -24,6 +24,7 @@
     ></v-select>
     <v-btn 
       block
+      @click="submit"
     >
       Submit
     </v-btn>
@@ -85,6 +86,11 @@ export default {
       this.selectedDeviceModel = null;
       this.selectedOS = null;
     }
+  },
+  methods: {
+    submit: function () {
+      console.log("submit")
+    },
   }
 }
 </script>
