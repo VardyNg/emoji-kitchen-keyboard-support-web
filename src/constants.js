@@ -8,85 +8,86 @@ export const deviceType = {
 
 // device model
 // -- iPhone
-export const iPhone_6s = 'iPhone 6s';
-export const iPhone_6sPlus = 'iPhone 6s Plus';
-export const iPhone_SE_1stGen = 'iPhone SE (1st generation)';
-export const iPhone_7 = 'iPhone 7';
-export const iPhone_7Plus = 'iPhone 7 Plus';
-export const iPhone_8 = 'iPhone 8';
-export const iPhone_8Plus = 'iPhone 8 Plus';
-export const iPhone_X = 'iPhone X';
-export const iPhone_XR = 'iPhone XR';
-export const iPhone_XS = 'iPhone XS';
-export const iPhone_XSMax = 'iPhone XS Max';
-export const iPhone_11 = 'iPhone 11';
-export const iPhone_11Pro = 'iPhone 11 Pro';
-export const iPhone_11ProMax = 'iPhone 11 Pro Max';
-export const iPhone_SE_2ndGen = 'iPhone SE (2nd generation)';
-export const iPhone_12Mini = 'iPhone 12 Mini';
-export const iPhone_12 = 'iPhone 12';
-export const iPhone_12Pro = 'iPhone 12 Pro';
-export const iPhone_12ProMax = 'iPhone 12 Pro Max';
-export const iPhone_13Mini = 'iPhone 13 Mini';
-export const iPhone_13 = 'iPhone 13';
-export const iPhone_13Pro = 'iPhone 13 Pro';
-export const iPhone_13ProMax = 'iPhone 13 Pro Max';
-export const iPhone_14 = 'iPhone 14';
-export const iPhone_14Plus = 'iPhone 14 Plus';
-export const iPhone_14Pro = 'iPhone 14 Pro';
-export const iPhone_14ProMax = 'iPhone 14 Pro Max';
-export const iPhone_15 = 'iPhone 15';
-export const iPhone_15Plus = 'iPhone 15 Plusi';
-export const iPhone_15Pro = 'iPhone 15 Pro';
-export const iPhone_15ProMax = 'iPhone 15 Pro Max';
+export const iPhone = {
+  iPhone_6s: 'iPhone 6s',
+  iPhone_6sPlus: 'iPhone 6s Plus',
+  iPhone_SE_1stGen: 'iPhone SE (1st generation)',
+  iPhone_7: 'iPhone 7',
+  iPhone_7Plus: 'iPhone 7 Plus',
+  iPhone_8: 'iPhone 8',
+  iPhone_8Plus: 'iPhone 8 Plus',
+  iPhone_X: 'iPhone X',
+  iPhone_XR: 'iPhone XR',
+  iPhone_XS: 'iPhone XS',
+  iPhone_XSMax: 'iPhone XS Max',
+  iPhone_11: 'iPhone 11',
+  iPhone_11Pro: 'iPhone 11 Pro',
+  iPhone_11ProMax: 'iPhone 11 Pro Max',
+  iPhone_SE_2ndGen: 'iPhone SE (2nd generation)',
+  iPhone_12Mini: 'iPhone 12 Mini',
+  iPhone_12: 'iPhone 12',
+  iPhone_12Pro: 'iPhone 12 Pro',
+  iPhone_12ProMax: 'iPhone 12 Pro Max',
+  iPhone_13Mini: 'iPhone 13 Mini',
+  iPhone_13: 'iPhone 13',
+  iPhone_13Pro: 'iPhone 13 Pro',
+  iPhone_13ProMax: 'iPhone 13 Pro Max',
+  iPhone_14: 'iPhone 14',
+  iPhone_14Plus: 'iPhone 14 Plus',
+  iPhone_14Pro: 'iPhone 14 Pro',
+  iPhone_14ProMax: 'iPhone 14 Pro Max',
+  iPhone_15: 'iPhone 15',
+  iPhone_15Plus: 'iPhone 15 Plusi',
+  iPhone_15Pro: 'iPhone 15 Pro',
+  iPhone_15ProMax: 'iPhone 15 Pro Max',
+}
 
 // --- iPad
-export const iPad_8thGen = 'iPad 8th generation (2020)';
-export const iPad_9thGen = 'iPad 9th generation (2021)';
-export const iPad_10thGen = 'iPad 10th generation (2022)';
-
-export const iPad_mini_4thGen = 'iPad mini 4th generation (2015)';
-export const iPad_mini_5thGen = 'iPad mini 5th generation (2019)';
-export const iPad_mini_6thGen = 'iPad mini 6th generation (2021)';
-
-export const iPad_air_2thGen = 'iPad Air 2rd generation (2014)';
-export const iPad_air_3thGen = 'iPad Air 3rd generation (2019)';
-export const iPad_air_4thGen = 'iPad Air 4th generation (2020)';
-export const iPad_air_5thGen = 'iPad Air 5th generation (2022)';
-
-export const iPad_Pro_1stGen_9_7 = 'iPad Pro 1st generation (2015) (9.7-inch)';
-export const iPad_Pro_1stGen_12_9 = 'iPad Pro 1st generation (2016) (12.9-inch)';
-export const iPad_Pro_2ndGen_10_5 = 'iPad Pro 2nd generation (2017) (10.5-inch)';
-export const iPad_Pro_2ndGen_12_9 = 'iPad Pro 2nd generation (2017) (12.9-inch)';
-export const iPad_Pro_3rdGen_11 = 'iPad Pro 3rd generation (2018) (11-inch)';
-export const iPad_Pro_3rdGen_12_9 = 'iPad Pro 3rd generation (2018) (12.9-inch)';
-export const iPad_Pro_4thGen_11 = 'iPad Pro 4th generation (2020) (11-inch)';
-export const iPad_Pro_4thGen_12_9 = 'iPad Pro 4th generation (2020) (12.9-inch)';
-export const iPad_Pro_5thGen_11 = 'iPad Pro 5th generation (2021) (11-inch)';  
-export const iPad_Pro_5thGen_12_9 = 'iPad Pro 5th generation (2021) (12.9-inch)';
-export const iPad_Pro_6thGen_11 = 'iPad Pro 6th generation (2022) (11-inch)';
-export const iPad_Pro_6thGen_12_9 = 'iPad Pro 6th generation (2022) (12.9-inch)';
+export const iPad = {
+  iPad_8thGen: 'iPad 8th generation (2020)',
+  iPad_9thGen: 'iPad 9th generation (2021)',
+  iPad_10thGen: 'iPad 10th generation (2022)',
+  iPad_mini_4thGen: 'iPad mini 4th generation (2015)',
+  iPad_mini_5thGen: 'iPad mini 5th generation (2019)',
+  iPad_mini_6thGen: 'iPad mini 6th generation (2021)',
+  iPad_air_2thGen: 'iPad Air 2rd generation (2014)',
+  iPad_air_3thGen: 'iPad Air 3rd generation (2019)',
+  iPad_air_4thGen: 'iPad Air 4th generation (2020)',
+  iPad_air_5thGen: 'iPad Air 5th generation (2022)',
+  iPad_Pro_1stGen_9_7: 'iPad Pro 1st generation (2015) (9.7-inch)',
+  iPad_Pro_1stGen_12_9: 'iPad Pro 1st generation (2016) (12.9-inch)',
+  iPad_Pro_2ndGen_10_5: 'iPad Pro 2nd generation (2017) (10.5-inch)',
+  iPad_Pro_2ndGen_12_9: 'iPad Pro 2nd generation (2017) (12.9-inch)',
+  iPad_Pro_3rdGen_11: 'iPad Pro 3rd generation (2018) (11-inch)',
+  iPad_Pro_3rdGen_12_9: 'iPad Pro 3rd generation (2018) (12.9-inch)',
+  iPad_Pro_4thGen_11: 'iPad Pro 4th generation (2020) (11-inch)',
+  iPad_Pro_4thGen_12_9: 'iPad Pro 4th generation (2020) (12.9-inch)',
+  iPad_Pro_5thGen_11: 'iPad Pro 5th generation (2021) (11-inch)',
+  iPad_Pro_5thGen_12_9: 'iPad Pro 5th generation (2021) (12.9-inch)',
+  iPad_Pro_6thGen_11: 'iPad Pro 6th generation (2022) (11-inch)',
+  iPad_Pro_6thGen_12_9: 'iPad Pro 6th generation (2022) (12.9-inch)',
+}
 
 // --- iPod Touch
-export const iPodTouch_7thGen = 'iPod Touch 7th generation (2019)';
+export const iPodTouch = {
+  iPodTouch_7thGen: 'iPod Touch 7th generation (2019)'
+}
 
 // --- Mac
-export const MacbookPro_2023 = 'Macbook Pro 2023 (14-inch/16-inch) (M2 Pro/M2 Max)';
-export const MacbookPro_2022 = 'Macbook Pro 2022 (13-inch) (M2)';
-export const MacbookPro_2021 = 'Macbook Pro 2023 (14-inch/16-inch) (M2 Pro/M2 Max)';
-export const MacbookPro_2020 = 'Macbook Pro 2020 (13-inch) (M1)';
-
-export const MacbookAir_2020 = "Macbook Air 2020 (13-inch) (M1)"
-export const MacbookAir_2022 = "Macbook Air 2022 (13-inch) (M2)"
-export const MacbookAir_2023 = "Macbook Air 2023 (15-inch) (M2)"
-
-export const MacMini_2020 = "Mac Mini 2020 (M1)"
-export const MacMini_2023 = "Mac Mini 2023 (M2/M2 Pro)"
-
-export const MacStudio_2022 = "Mac Studio 2022 (M1 Max / M1 Ultra)"
-export const MacStudio_2023 = "Mac Studio 2023 (M2 Max / M2 Ultra)"
-
-export const MacPro2023 = "Mac Pro 2023 (M2 Ultra)"
+export const mac = {
+  macbookPro_2023: 'Macbook Pro 2023 (14-inch/16-inch) (M2 Pro/M2 Max)',
+  macbookPro_2022: 'Macbook Pro 2022 (13-inch) (M2)',
+  macbookPro_2021: 'Macbook Pro 2023 (14-inch/16-inch) (M2 Pro/M2 Max)',
+  macbookPro_2020: 'Macbook Pro 2020 (13-inch) (M1)',
+  macbookAir_2020: "Macbook Air 2020 (13-inch) (M1)",
+  macbookAir_2022: "Macbook Air 2022 (13-inch) (M2)",
+  macbookAir_2023: "Macbook Air 2023 (15-inch) (M2)",
+  macMini_2020: "Mac Mini 2020 (M1)",
+  macMini_2023: "Mac Mini 2023 (M2/M2 Pro)",
+  macStudio_2022: "Mac Studio 2022 (M1 Max / M1 Ultra)",
+  macStudio_2023: "Mac Studio 2023 (M2 Max / M2 Ultra)",
+  macPro2023: "Mac Pro 2023 (M2 Ultra)",
+}
 
 // iOS
 export const iOS_14_0 = 'iOS/iPadOS 14.0';
