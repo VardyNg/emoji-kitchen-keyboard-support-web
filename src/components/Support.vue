@@ -135,6 +135,11 @@ export default {
     selectedOS() {
       // remove error message
       this.deviceOSErrorMsg = "";
+    },
+    describedIssues() {
+      // remove error message
+      this.describeIssueErrorMsg = "";
+      this.validateDescribedIssue()
     }
   },
   methods: {
