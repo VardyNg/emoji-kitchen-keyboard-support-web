@@ -81,17 +81,16 @@ const deviceSupport = {
   [constants.MacPro2023]: formatOSRange(constants.macOS_13, appMaxVersionMacOS)
 }
 
-export default function getDeviceOS(deviceName) {
-  const supportedOS = deviceSupport[deviceName];
+export default function getDeviceOS(deviceType) {
+  switch (deviceType) {
+      case constants.deviceType_Mac:
+        return getDeviceModelsByPrefix('macOS', constants);
+      case constants.deviceType_iPad:
+      case constants.deviceType_iPhone:
+      case constants.deviceType_iPod_touch:
+        return getDeviceModelsByPrefix('iOS', constants);
+      default:
+        return [];
+  } 
 
-  if (supportedOS) {
-    const osVersions = [];
-    for (let version = supportedOS.min; version <= supportedOS.max; version++) {
-      osVersions.push(version);
-    }
-    return osVersions;
-  } else {
-    console.error(`${deviceName} is not found in the device support data.`);
-    return [];
-  }
 }
