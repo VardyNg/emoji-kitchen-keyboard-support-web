@@ -8,20 +8,25 @@
       :items="deviceTypes"
       v-model="selectedDeviceType"
       variant="outlined"
+      :error-messages="deviceTypeErrorMsg"
     />
+
     <v-select
-      label="Model"
+      label="Model *"
       :items="filteredModels"
       variant="outlined"
       v-model="selectedDeviceModel"
       :disabled="isModelSelectionDisabled"
+      :error-messages="deviceModelErrorMsg"
     />
+
     <v-select
-      label="OS"
+      label="OS *"
       :items="filteredOS"
       variant="outlined"
       v-model="selectedOS"
       :disabled="isModelSelectionDisabled"
+      :error-messages="deviceOSErrorMsg"
     />
     
     <div class="form-section-title">Issue</div>
@@ -71,14 +76,20 @@ export default {
   name: 'SupportPage',
   data() {
     return {
+      // data
       deviceTypes: getDeviceTypeList(),
+      issueTypes: constants.issueTypes,
+      // inputs
       selectedDeviceType: null,
       selectedDeviceModel: null, 
       selectedOS: null,
       selectedIssues: [],
       describedIssues: "",
       inputEmail: "",
-      issueTypes: constants.issueTypes,
+      // error boolean
+      deviceTypeErrorMsg: "",
+      deviceModelErrorMsg: "",
+      deviceOSErrorMsg: "",
     }
   },
   computed: {
@@ -110,11 +121,30 @@ export default {
       // Reset selectedDeviceModel and selectedOS when device type changes
       this.selectedDeviceModel = null;
       this.selectedOS = null;
+
+      // remove error message
+      this.deviceTypeErrorMsg = "";
+    },
+    selectedDeviceModel() {
+      // remove error message
+      this.deviceModelErrorMsg = "";
+    },
+    selectedOS() {
+      // remove error message
+      this.deviceOSErrorMsg = "";
     }
   },
   methods: {
     submit: function () {
       console.log("submit")
+      // validate input
+      if (!this.selectedDeviceType) 
+        this.deviceTypeErrorMsg = "Please select a device type";
+      if (!this.selectedDeviceModel) 
+        this.deviceModelErrorMsg = "Please select a device model";
+      if (!this.selectedOS)
+        this.deviceOSErrorMsg = "Please select an OS";
+
       const body = {
         "selectedDeviceType": this.selectedDeviceType,
         "selectedDeviceModel": this.selectedDeviceModel,
