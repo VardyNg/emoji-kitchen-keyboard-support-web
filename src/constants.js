@@ -1,3 +1,7 @@
+export const general = {
+  appName: 'Emoji Kitchen Keyboard',
+  author: 'Vardy Ng'
+}
 // device type
 export const deviceType = {
   iPhone: 'iPhone',
