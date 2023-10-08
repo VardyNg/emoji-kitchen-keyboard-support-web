@@ -33,10 +33,12 @@ jobs:
       
       - name: Upload to blob storage
         uses: azure/CLI@v1
+        env:
+          AZURE_STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
         with:
           inlineScript: |
               az storage blob upload-batch \
-                --account-name ${{ AZURE_STORAGE_ACCOUNT_NAME }} \
+                --account-name $AZURE_STORAGE_ACCOUNT_NAME \
                 --auth-mode key \
                 --destination '$web' \
                 --source dist
