@@ -35,12 +35,13 @@ jobs:
         uses: azure/CLI@v1
         env:
           AZURE_STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
+          AZURE_STORAGE_CONTAINER: ${{ secrets.AZURE_STORAGE_CONTAINER }}
         with:
           inlineScript: |
               az storage blob upload-batch \
                 --account-name $AZURE_STORAGE_ACCOUNT_NAME \
                 --auth-mode key \
-                --destination '$web' \
+                --destination '$AZURE_STORAGE_CONTAINER' \
                 --source dist
       - name: logout
         run: |
