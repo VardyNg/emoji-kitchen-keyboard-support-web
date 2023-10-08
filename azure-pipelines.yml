@@ -1,0 +1,9 @@
+trigger:
+- prod
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+step:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
