@@ -4,6 +4,6 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-step:
+steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
