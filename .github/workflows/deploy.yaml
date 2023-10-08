@@ -41,7 +41,7 @@ jobs:
               az storage blob upload-batch \
                 --account-name $AZURE_STORAGE_ACCOUNT_NAME \
                 --auth-mode key \
-                --destination '$AZURE_STORAGE_CONTAINER' \
+                --destination $AZURE_STORAGE_CONTAINER \
                 --source dist
       - name: logout
         run: |
