@@ -21,8 +21,26 @@ jobs:
         with:
           ref: 'prod'
       
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Install Dependencies
         run: npm install
 
       - name: Build
         run: npm run build
+      
+      - name: Upload to blob storage
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+              az storage blob upload-batch \
+                --account-name ${{ AZURE_STORAGE_ACCOUNT_NAME }} \
+                --auth-mode key \
+                --destination '$web' \
+                --source dist
+      - name: logout
+        run: |
+              az logout
+        if: always()
