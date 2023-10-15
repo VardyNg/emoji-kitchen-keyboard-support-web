@@ -77,6 +77,7 @@ import {
   getMacModels, 
 } from '@/utils/getDeviceModelName';
 import * as constants from '@/constants';
+import sendForm from '@/utils/sendForm';
 export default {
   name: 'SupportPage',
   data() {
@@ -155,8 +156,10 @@ export default {
       }
       return true
     },
-    submit: function () {
+    submit: async function () {
       console.log("submit")
+      console.log(process.env)
+      console.log(process.env.VUE_APP_API_URL)
       // validate input
       var valid = true;
       if (!this.selectedDeviceType) {
@@ -177,19 +180,20 @@ export default {
 
       if (valid) {
         this.formErrorMsg = ""
+        const body = {
+          "selectedDeviceType": this.selectedDeviceType,
+          "selectedDeviceModel": this.selectedDeviceModel,
+          "selectedOS": this.selectedOS,
+          "selectedIssues": this.selectedIssues,
+          "describedIssues": this.describedIssues,
+          "inputEmail": this.inputEmail,
+        }
+        const res = await sendForm(body)
+        console.log(res)
       } else {
         this.formErrorMsg = "Please fill in all required fields or correct the errors"
       }
       
-      const body = {
-        "selectedDeviceType": this.selectedDeviceType,
-        "selectedDeviceModel": this.selectedDeviceModel,
-        "selectedOS": this.selectedOS,
-        "selectedIssues": this.selectedIssues,
-        "describedIssues": this.describedIssues,
-        "inputEmail": this.inputEmail,
-      }
-      console.log(body);
     },
     clear: function () {
       console.log("clear")
